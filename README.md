@@ -2,6 +2,25 @@
   <img alt="Redoc logo" src="./images/logo.png" height="400px" width="400px" />
 </div>
 <br>
+<p align="center">
+    <a href="LICENSE" target="_blank">
+        <img src="https://img.shields.io/github/license/vieo-us/datacenter-pve-guide" alt="GitHub license">
+    </a>
+    <a href="https://github.com/vieo-us/datacenter-pve-guide/releases" target="_blank">
+        <img src="https://img.shields.io/github/tag/vieo-us/datacenter-pve-guide" alt="GitHub tag (latest SemVer)">
+    </a>
+    <a href="https://github.com/vieo-us/datacenter-pve-guide/commits" target="_blank">
+        <img src="https://img.shields.io/github/commit-activity/t/vieo-us/datacenter-pve-guide
+        " alt="GitHub commit activity">
+    </a>
+    <a href="https://github.com/vieo-us/datacenter-pve-guide/graphs/contributors" target="_blank">
+        <img src="https://img.shields.io/github/contributors-anon/vieo-us/datacenter-pve-guide" alt="GitHub contributors">
+    </a>
+    <a href="https://github.com/vieo-us/datacenter-pve-guide/releases" target="_blank">
+        <img src=https://img.shields.io/github/downloads/vieo-us/datacenter-pve-guide/total
+         alt="Packagist downloads">
+    </a>
+</p>
 <div align="center">
 
   # Proxmox VE Remote Data-Center (VDC)

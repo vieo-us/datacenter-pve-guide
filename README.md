@@ -10,7 +10,7 @@
         <img src="https://img.shields.io/github/tag/vieo-us/datacenter-pve-guide" alt="GitHub tag (latest SemVer)">
     </a>
     <a href="https://github.com/vieo-us/datacenter-pve-guide/commits" target="_blank">
-        <img src="https://img.shields.io/github/commit-activity/t/vieo-us/datacenter-pve-guide
+        <img src="https://img.shields.io/github/commit-activity/t/vieo-us/datacenter-pve-guide"
         " alt="GitHub commit activity">
     </a>
     <a href="https://github.com/vieo-us/datacenter-pve-guide/graphs/contributors" target="_blank">

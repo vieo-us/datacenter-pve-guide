@@ -1,4 +1,11 @@
-# Small homelab K8s cluster on Proxmox VE
+<div align="center">
+  <img alt="Redoc logo" src="./images/logo.png" height="200px" width="200x" />
+</div>
+<br>
+<div align="center">
+
+  # Proxmox VE Remote Data-Center (VDC)
+</div>
 
 Would you like to practice with K8s/Kubernetes? Do you happen to have one spare computer at hand? Then this guide series may be right for you! In it I explain how to configure a server able to run a small Kubernetes cluster, set up with just a few virtual machines.
 

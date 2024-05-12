@@ -18,7 +18,7 @@
     </a>
     <a href="https://github.com/vieo-us/datacenter-pve-guide/releases" target="_blank">
         <img src=https://img.shields.io/github/downloads/vieo-us/datacenter-pve-guide/total
-         alt="Packagist downloads">
+         alt="Github downloads">
     </a>
 </p>
 <div align="center">

@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Redoc logo" src="./images/logo.png" height="200px" width="200x" />
+  <img alt="Redoc logo" src="./images/logo.png" height="400px" width="400px" />
 </div>
 <br>
 <div align="center">

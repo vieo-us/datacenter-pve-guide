@@ -10,7 +10,7 @@ The deployment consists of a mix of powerful servers with high core counts, subs
 
 #### WireGuard Server
 
-- **Processor**: Dual Xeon 5150 @ 3.00GHz (4 Cores / 4 Threads)
+- **Processor**: Dual Xeon 5160 @ 3.00GHz (4 Cores / 4 Threads)
 - **Memory**: 16GB DDR2 RAM
 - **Storage**:
   - 120GB SSD

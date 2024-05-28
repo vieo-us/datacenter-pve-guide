@@ -97,7 +97,7 @@ NOCIX’s data center in Kansas City, Missouri, offers a robust and secure envir
 
 ### Summary
 
-The NOCIX data center combines affordability with high reliability, making it an excellent choice for deploying a Virtual Data Center using Proxmox VE. Its robust security measures, redundant power infrastructure, reliable network capabilities, and extensive peering arrangements ensure a stable and secure environment for hosting enterprise-grade workloads. For more detailed information about NOCIX data centers and their offerings
+This hardware setup provides a comprehensive and scalable cluster environment for deploying a Virtual Data Center using Proxmox VE. The NOCIX data center enhances this setup with affordability with high reliability, robust security measures, redundant power infrastructure, reliable network capabilities, and extensive peering arrangements ensures a stable and secure environment for hosting enterprise-grade workloads.
 
 ## References
 

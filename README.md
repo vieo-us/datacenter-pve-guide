@@ -24,6 +24,7 @@
 <div align="center">
 
   # Proxmox VE Remote Data-Center (VDC)
+  ## Reference Implementation
 </div>
 
 Would you like to deploy a Virtual Data Center (VDC) in a remote facility and work with Docker Swarm and Kubernetes (K8s)? Perhaps you need to establish development, staging, and production environments. Do you have the ability to source Metal as a Service (MaaS) or Infrastructure as a Service (IaaS) from an affordable provider? If so, this guide series is for you! It explains how to configure a VDC server capable of running enterprise workloads using Proxmox VE.

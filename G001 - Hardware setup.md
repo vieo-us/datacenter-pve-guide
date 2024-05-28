@@ -1,48 +1,103 @@
-# G001 - Hardware setup
+# G001 - Hardware Setup
 
-The first thing you need to have is a capable computer. In the [README](README.md) I've talked about a small or low-end consumer computer, meaning that you don't need the latest and fastest machine available in the market. Any relatively modern small tower PC, or even a normal laptop, could be adequate. Still, your computer must meet certain minimum requirements, or it won't be able to run the Kubernetes cluster the way it's explained in this guide series.
+This section provides detailed specifications and setup instructions for the servers used in deploying a Virtual Data Center (VDC) with Proxmox VE 8.2.2. The following hardware has been selected and configured to ensure a robust and scalable environment capable of handling a variety of enterprise-grade workloads.
 
-## The reference hardware setup
+The first requirement is to have several capable servers. As mentioned in the [README](README.md), affordable enterprise-grade computers are recommended, which means that the latest and fastest machines are not necessary. Any relatively modern server could be adequate, but it must meet certain minimum requirements to effectively scale the workloads described in this guide series.
 
-The hardware setup that serves as platform and reference for this guide series is a slightly upgraded [Lenovo H30-00 desktop computer](https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/lenovo-h-series-desktops/lenovo-h30-00-desktop) from 2014. After the upgrade, it has the following specs.
+## Server Specifications
 
-- **CPU** [Intel Pentium J2900](https://ark.intel.com/content/www/us/en/ark/products/78868/intel-pentium-processor-j2900-2m-cache-up-to-2-67-ghz.html): This is a **four one-thread cores** cpu built on a **64 bits architecture** that also comes with **VT-x virtualization technology**.
+The deployment consists of a mix of powerful servers with high core counts, substantial memory, and SSD storage to ensure performance and reliability.
 
-- **GPU** [Intel® HD Graphics for Intel Atom® Processor Z3700 Series](https://ark.intel.com/content/www/us/en/ark/products/78868/intel-pentium-processor-j2900-2m-cache-up-to-2-67-ghz.html#tab-blade-1-0-4), integrated in the CPU.
+#### WireGuard Server
 
-- **RAM** is one DDR3 8 GiB module, the maximum allowed by the motherboard and the J2900 CPU.
+- **Processor**: Dual Xeon 5150 @ 3.00GHz (4 Cores / 4 Threads)
+- **Memory**: 16GB DDR2 RAM
+- **Storage**:
+  - 120GB SSD
+  - 2 x 500GB SSD
 
-- The storage has the following setup:
-    - One internal, 1 TiB, SSD drive, linked to a SATA 2 port.
-    - One internal, 1 TiB, HDD drive, linked to a SATA 2 port .
-    - One external, 2 TiB, HDD drive, plugged to a USB 3 port.
+#### PVE Node 1
 
-- The computer also has a bunch of USB 2 connectors plus one USB 3 plug.
+- **Processor**: Dual Xeon E5-2696 v3 @ 2.30GHz / 3.6GHz Turbo (36 Cores / 72 Threads)
+- **Memory**: 128GB DDR4 RAM
+- **Storage**:
+  - 2 x 4TB SSD
 
-- One Realtek fast/gigabit Ethernet controller, integrated in the motherboard.
+#### PVE Node 2
 
-- One Realtek wireless network adapter, also integrated in the motherboard.
+- **Processor**: Dual Xeon E5-2683 v4 @ 2.10GHz / 3.0GHz Turbo (36 Cores / 72 Threads)
+- **Memory**: 128GB DDR4 RAM
+- **Storage**:
+  - 960GB SSD
+  - 8TB SATA
 
-- Power supply happens to be an external small brick like the ones used in laptops. Good for keeping the power supply's heat out of the computer.
+#### PVE Node 3
 
-- UPS [APC Back-UPS ES 700](https://www.apc.com/shop/es/es/products/Back-UPS-700-de-bajo-consumo-de-APC-230-V-CEE-7-7/P-BE700G-SP).
+- **Processor**: Dual Xeon E5-2696 v3 @ 2.30GHz / 3.6GHz Turbo (36 Cores / 72 Threads)
+- **Memory**: 128GB DDR4 RAM
+- **Storage**:
+  - 2 x 2TB SSD
 
-This rather cheap rig is close to what a basic modern NUC or mini PC can come with (at the time of writing this). Now, let me explain why you should consider a hardware configuration like this as your bare minimum.
+#### PVE Node 4
 
-- The CPU must be 64 bits since Proxmox VE only runs on 64 bits CPUs.
+- **Processor**: Dual Xeon E5-2696 v3 @ 2.30GHz / 3.6GHz Turbo (36 Cores / 72 Threads)
+- **Memory**: 128GB DDR4 RAM
+- **Storage**:
+  - 2 x 1TB SSD
 
-- The CPU should have virtualization technology embedded or the virtual machines' performance could be awful. Proxmox VE also expects the CPU to have this capability available.
+### Network Configuration
 
-- Having less than 8 GiB of RAM won't cut it, the virtual machines you'll use as Kubernetes nodes will require at least 1 GiB each. So, starting from 8 GiB, the more RAM you can put in your computer the better.
+Each server is equipped with a /29 subnet providing 5 usable IPv4 addresses, plus an additional /28 subnet for each PVE node, yielding 13 usable IPv4 addresses per node. This results in a total of 77 public IPv4 addresses. Additionally, each server is assigned a /64 IPv6 subnet.
 
-- Regarding storage, at least you'll need one big enough internal storage drive and another big external one.
-    - The internal one should be SSD so you can get the best performance possible out of your system, meaning that in this drive is where you should install the Proxmox VE platform and where you must put the root filesystems of your VMs.
-    - The external one could be a 7200 RPM HDD, pluggable through USB 3 (if possible). This drive would serve you as the backup storage.
-    - If you happen to have another big storage drive that you can put inside your computer, as I set up in mine, you could use it as data storage.
+For optimal performance, a 10Gbit Ethernet connection is recommended for the network configuration. However, in this preconfigured setup, 1Gbit Ethernet connections to the Network Operations Center (NOC) are being used.
 
-- If you don't have it already, get an UPS. Running a server without one is risking damage or, at least, data losses in case of outages or electric spikes.
+### Storage Overview
 
-So, although a hardware setup like this won't allow you to use things usually found in professional environments (RAID storage configurations, high availability, etc), you'll get a decent small homelab for your personal usage.
+The total storage capacity across all nodes is approximately 24TB, distributed as follows:
+
+- **WireGuard Server**: 1.12TB (120GB SSD + 2 x 500GB SSD)
+- **PVE Node 1**: 8TB (2 x 4TB SSD)
+- **PVE Node 2**: 8.96TB (960GB SSD + 8TB SATA)
+- **PVE Node 3**: 4TB (2 x 2TB SSD)
+- **PVE Node 4**: 2TB (2 x 1TB SSD)
+
+## Network Operations Center (NOC) Specifications
+
+Our cluster is deployed within the NOCIX data center, located in Kansas City, Missouri. NOCIX offers a robust and secure environment for hosting dedicated and virtual servers. Known for its affordability and reliability, NOCIX specializes in providing budget-friendly solutions for mission-critical hosting needs.
+
+We chose NOCIX for its central location within the United States. Being in the middle of the country allows for decent latency from other parts of the country, as the mileage between distant points remains almost the same on each side. This ensures that all points receive consistent latency relative to their distance.
+
+NOCIX’s data center in Kansas City, Missouri, offers a robust and secure environment for hosting dedicated and virtual servers. Known for its affordability and reliability, NOCIX specializes in providing budget-friendly solutions for mission-critical hosting needs.
+
+#### Key Features:
+
+1. **Security**:
+    - Access within the facility is controlled by biometric systems, including mantraps and blast-proof corridors.
+    - Extensive video surveillance covers every row of the dedicated server facility and the building exteriors, with video recordings maintained for security purposes.
+    - An armed staff member ensures additional safety within the facility.
+
+2. **Power Infrastructure**:
+    - The data center is fed by dual power grids from separate substations, ensuring high redundancy.
+    - Temporary power is supplied by N+1 redundant UPS systems, which allow maintenance without power interruption.
+    - Onsite backup power is provided by both natural gas and diesel generators, capable of running for 48 hours without refueling. Contracts with local fuel suppliers ensure continuous power availability even during extended outages.
+
+3. **Network Capabilities**:
+    - NOCIX operates a self-healing, private fiber ring connecting to downtown Kansas City, providing high network reliability.
+    - The network supports both IPv4 and IPv6, facilitating modern internet connectivity requirements.
+    - Despite the recommendation of 10GB Ethernet for optimal performance, the facility supports 1GB Ethernet connections, which can be upgraded as necessary to meet increasing demands.
+
+4. **Peering and Connectivity**:
+    - NOCIX has extensive peering arrangements to ensure high-speed connectivity and redundancy. The facility is connected to multiple Tier 1 carriers and internet exchanges, enhancing both local and global reach.
+    - This extensive peering ensures low latency and high availability, which is crucial for maintaining consistent performance and reliability for hosted services.
+
+5. **Service Offerings**:
+    - NOCIX offers instant activation for some preconfigured server plans and custom server configurations ready within two business days.
+    - All servers come with full root SSH access, free setup, and competitive pricing.
+    - The facility provides a range of dedicated server options, from budget-friendly to high-performance configurations, suitable for various business needs.
+
+### Summary
+
+The NOCIX data center combines affordability with high reliability, making it an excellent choice for deploying a Virtual Data Center using Proxmox VE. Its robust security measures, redundant power infrastructure, reliable network capabilities, and extensive peering arrangements ensure a stable and secure environment for hosting enterprise-grade workloads. For more detailed information about NOCIX data centers and their offerings
 
 ## References
 

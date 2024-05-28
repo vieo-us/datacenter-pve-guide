@@ -25,7 +25,7 @@ The deployment consists of a mix of powerful servers with high core counts, subs
 
 #### PVE Node 2
 
-- **Processor**: Dual Xeon E5-2683 v4 @ 2.10GHz / 3.0GHz Turbo (36 Cores / 72 Threads)
+- **Processor**: Dual Xeon E5-2683 v4 @ 2.10GHz / 3.0GHz Turbo (32 Cores / 64 Threads)
 - **Memory**: 128GB DDR4 RAM
 - **Storage**:
   - 960GB SSD
@@ -47,7 +47,7 @@ The deployment consists of a mix of powerful servers with high core counts, subs
 
 ### Network Configuration
 
-Each server is equipped with a /29 subnet providing 5 usable IPv4 addresses, plus an additional /28 subnet for each PVE node, yielding 13 usable IPv4 addresses per node. This results in a total of 77 public IPv4 addresses. Additionally, each server is assigned a /64 IPv6 subnet.
+Each server is equipped with a /29 subnet providing 5 usable IPv4 addresses, plus an additional /28 subnet for each PVE node, yielding 13 usable IPv4 addresses per node. This results in a total of 77 public IPv4 addresses. Additionally, each server is assigned a /64 IPv6 subnet. The total cluster resources include 72 usable IPv4 address, 4 x /64 IPv6 subnets, 280 CPUs and 512GB of RAM, with storage totaling approximately 24TB.
 
 For optimal performance, a 10Gbit Ethernet connection is recommended for the network configuration. However, in this preconfigured setup, 1Gbit Ethernet connections to the Network Operations Center (NOC) are being used.
 
@@ -103,10 +103,11 @@ This hardware setup provides a comprehensive and scalable cluster environment fo
 
 ### _Hardware_
 
-- [Lenovo H30-00 desktop computer](https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/lenovo-h-series-desktops/lenovo-h30-00-desktop)
-- [Intel Pentium J2900](https://ark.intel.com/content/www/us/en/ark/products/78868/intel-pentium-processor-j2900-2m-cache-up-to-2-67-ghz.html)
-- [Intel® HD Graphics for Intel Atom® Processor Z3700 Series](https://ark.intel.com/content/www/us/en/ark/products/78868/intel-pentium-processor-j2900-2m-cache-up-to-2-67-ghz.html#tab-blade-1-0-4)
-- [APC Back-UPS ES 700](https://www.apc.com/shop/es/es/products/Back-UPS-700-de-bajo-consumo-de-APC-230-V-CEE-7-7/P-BE700G-SP)
+- [Intel Xeon 5160](https://ark.intel.com/content/www/us/en/ark/products/27219/intel-xeon-processor-5160-4m-cache-3-00-ghz-1333-mhz-fsb.html)
+- [Intel Xeon E5-2696 V3](https://www.techpowerup.com/cpu-specs/xeon-e5-2696-v3.c2903)
+- [Intel® Xeon E5-2683 V4](https://www.intel.com/content/www/us/en/products/sku/91766/intel-xeon-processor-e52683-v4-40m-cache-2-10-ghz/specifications.html)
+- [NOCIX](https://www.nocix.net/)
+- [1530 Swift Data-Center](https://1530swift.com/)
 
 ## Navigation
 

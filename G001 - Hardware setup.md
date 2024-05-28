@@ -67,8 +67,6 @@ Our cluster is deployed within the NOCIX data center, located in Kansas City, Mi
 
 We chose NOCIX for its central location within the United States. Being in the middle of the country allows for decent latency from other parts of the country, as the mileage between distant points remains almost the same on each side. This ensures that all points receive consistent latency relative to their distance.
 
-NOCIX’s data center in Kansas City, Missouri, offers a robust and secure environment for hosting dedicated and virtual servers. Known for its affordability and reliability, NOCIX specializes in providing budget-friendly solutions for mission-critical hosting needs.
-
 #### Key Features:
 
 1. **Security**:

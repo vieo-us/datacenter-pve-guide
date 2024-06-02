@@ -28,4 +28,4 @@
 
 ## Navigation
 
-[<< Previous (**README**)](README.md) | [Next (**G001** - Hardware setup) >>](G001%20-%20Hardware%20Setup.md)
+[<< Previous (**README**)](README.md) | [Next (**G001** - Hardware Setup) >>](G001%20-%20Hardware%20Setup.md)

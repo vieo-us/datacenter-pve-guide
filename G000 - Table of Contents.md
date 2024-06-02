@@ -2,14 +2,14 @@
 
 ## [**README**](README.md#proxmox-ve-remote-data-center-(vdc))
 
-- [_Introduction_](README.md#introduction)
-- [_Description of Contents_](README.md#description-of-contents)
-- [_Intended Audience_](README.md#intended-audience)
-- [_Goals_](README.md#goals)
+- [_Introduction_](./README.md#introduction)
+- [_Description of Contents_](./README.md#description-of-contents)
+- [_Intended Audience_](./README.md#intended-audience)
+- [_Goals_](./README.md#goals)
 
 ## [**LICENSE**](LICENSE.md)
 
-- [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License](LICENSE.md#creative-commons-attribution-noncommercial-sharealike-40-international-public-license)
+- [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License](./LICENSE.md#creative-commons-attribution-noncommercial-sharealike-40-international-public-license)
 
 ## Guides
 

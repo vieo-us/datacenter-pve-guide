@@ -72,8 +72,11 @@ The main goal of the build explained in this guide series is to combine affordab
 
 The core platforms used in this guide series to build the cluster are:
 
-- Virtualization platform: [Proxmox Virtual Environment](https://www.proxmox.com/en/) in a standalone node.
-- [Rancher K3s](https://k3s.io/) [Kubernetes](https://kubernetes.io/) distribution for building the small Kubernetes cluster with KVM virtual machines run by the Proxmox VE standalone node.
+- Virtualization platform: [Proxmox Virtual Environment](https://www.proxmox.com/en/) in a clustered mode.
+- Database clusters using [MySQL]() and [PostgreSQL]() with virtual machines run by the Proxmox VE cluster.
+- [Docker](https://www.docker.com/) engine deployed in swarm mode with virtual machines run by the Proxmox VE cluster.
+- [Rancher K3s](https://k3s.io/) [Kubernetes](https://kubernetes.io/) distribution for building the Kubernetes cluster with virtual machines run by the Proxmox VE cluster.
+- Hosting environment using [Virtualmin](https://www.virtualmin.com/) which will also provide other services to the network including DNS, eMail and will be deployed in virtual machines run by the Proxmox VE cluster.
 
 After setting up the Kubernetes cluster, the idea is to deploy in it the following.
 
@@ -85,7 +88,7 @@ The whole system will also have backup procedures applied to it.
 
 ## Table of Contents
 
-All the guides and their main sections are easily accessible through the [Table Of Contents](G000%20-%20Table%20of%20Contents.md) of this guide series.
+All the guides and their main sections are easily accessible through the [Table of Contents](G000%20-%20Table%20of%20Contents.md) of this guide series.
 
 ## Navigation
 

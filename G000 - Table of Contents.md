@@ -1,6 +1,6 @@
 # **G000** - Table of Contents
 
-## [**README**](README.md#small-homelab-k8s-cluster-on-proxmox-ve)
+## [**README**](README.md#proxmox-ve-remote-data-center-(vdc))
 
 - [_Introduction_](README.md#introduction)
 - [_Description of Contents_](README.md#description-of-contents)

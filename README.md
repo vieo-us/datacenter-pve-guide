@@ -89,4 +89,4 @@ All the guides and their main sections are easily accessible through the [Table 
 
 ## Navigation
 
-[+Table Of Contents+](G000%20-%20Table%20of%20Contents.md) | [Next (**G001. Hardware Setup**) >>](G001%20-%20Hardware%20Setup.md)
+[+Table of Contents+](G000%20-%20Table%20of%20Contents.md) | [Next (**G001. Hardware Setup**) >>](G001%20-%20Hardware%20Setup.md)

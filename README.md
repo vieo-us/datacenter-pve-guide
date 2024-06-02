@@ -29,7 +29,7 @@
 
 Would you like to deploy a Virtual Data Center (VDC) in a remote facility and work with Docker Swarm and Kubernetes (K8s)? Perhaps you need to establish development, staging, and production environments. Do you have the ability to source Metal as a Service (MaaS) or Infrastructure as a Service (IaaS) from an affordable provider? If so, this guide series is for you! It explains how to configure a VDC server capable of running enterprise workloads using Proxmox VE.
 
-The title says "Data Center," indicating that these guides are written with the idea of clustering several computers sourced from a US-based data center located in Kansas City, MO. The hardware considered is enterprise-grade, older model systems, but they are very capable for the proposed deployment. This capability is demonstrated in the very first [**G001** guide](G001%20-%20Hardware%20setup.md), which details the hardware setup.
+The title says "Data Center," indicating that these guides are written with the idea of clustering several computers sourced from a US-based data center located in Kansas City, MO. The hardware considered is enterprise-grade, older model systems, but they are very capable for the proposed deployment. This capability is demonstrated in the very first [**G001** guide](G001%20-%20Hardware%20Setup.md), which details the hardware setup.
 
 You might be wondering, aren't there already guides on how to build such a system? Well, not exactly. Most guides expect you to have several computers (usually Micro PCs and Raspberry Pis for the home lab user) available to use as nodes in your Docker Swarm or Kubernetes cluster. This guide proposes one or more powerful clusters bootstrapped with a virtual environment, allowing for full enterprise-grade deployments of any workload using virtual machines and containers.
 
@@ -83,8 +83,8 @@ The whole system will also have backup procedures applied to it.
 
 ## Table of contents
 
-All the guides and their main sections are easily accessible through the [Table Of Contents](G000%20-%20Table%20Of%20Contents.md) of this guide series.
+All the guides and their main sections are easily accessible through the [Table Of Contents](G000%20-%20Table%20of%20Contents.md) of this guide series.
 
 ## Navigation
 
-[+Table Of Contents+](G000%20-%20Table%20Of%20Contents.md) | [Next (**G001. Hardware setup**) >>](G001%20-%20Hardware%20setup.md)
+[+Table Of Contents+](G000%20-%20Table%20of%20Contents.md) | [Next (**G001. Hardware setup**) >>](G001%20-%20Hardware%20Setup.md)

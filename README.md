@@ -85,6 +85,7 @@ The core platforms used in this guide series to build the cluster are:
 Other platfroms and concepts will be demonstrated including:
 - Setting up multiple Development Workstations i.e. [MacOS](https://www.apple.com/macos/sonoma/), [Windows](https://www.microsoft.com/en-us/windows/windows-11?r=1), [Ubuntu](https://ubuntu.com/desktop) desktops for remote development support.
 - Monitoring tools i.e. [Prometheus](https://prometheus.io/), [Grafana](https://grafana.com/grafana/), and [Zabbix](https://www.zabbix.com/) for monitoring network and cluster services.
+- Most Physical Servers and VM's in the network with the exception of the PVE nodes will be setup with [Webmin](https://webmin.com/) to allow for web-based system administration of the servers and VM's as an alternative to using SSH and editing config files.
 
 After setting up the Docker Swarm cluster, the idea is to deploy in it the following.
 

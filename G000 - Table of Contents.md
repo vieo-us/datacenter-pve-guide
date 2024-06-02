@@ -6,6 +6,7 @@
 - [_Description of Contents_](./README.md#description-of-contents)
 - [_Intended Audience_](./README.md#intended-audience)
 - [_Goals_](./README.md#goals)
+- [_Acknowledgements_](./README.md#acknowledgements)
 
 ## [**LICENSE**](LICENSE.md)
 

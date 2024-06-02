@@ -95,6 +95,9 @@ After setting up the Kubernetes cluster, the idea is to deploy in it the followi
 
 The whole system will also have backup procedures applied to it.
 
+## Acknowledgements
+This project was forked from the [smallab-k8s-pve-guide](https://github.com/ehlesp/smallab-k8s-pve-guide) by [ehlesp](https://github.com/ehlesp). Significant modifications and extensions have been made to adapt it for the specific needs of this project. Special thanks to the original author for their valuable work.
+
 ## Table of Contents
 
 All the guides and their main sections are easily accessible through the [Table of Contents](G000%20-%20Table%20of%20Contents.md) of this guide series.

@@ -20,4 +20,4 @@ The latter two methods will allow remote installation when a pre-configured deli
 
 ## Navigation
 
-[<< Previous (**G001. Hardware Setup**)](G001%20-%20Hardware%20Setup.md) | [+Table of Contents+](G000%20-%20Table%20of%20Contents.md) | [Next (**G003. Host configuration 01**) >>](G003%20-%20Host%20configuration%2001%20~%20Apt%20sources%2C%20updates%20and%20extra%20tools.md)
+[<< Previous (**G002. Network Operations Center**)](G002%20-%20Network%20Operations%20Center.md) | [+Table of Contents+](G000%20-%20Table%20of%20Contents.md) | [Next (**G003. Host configuration 01**) >>](G003%20-%20Host%20configuration%2001%20~%20Apt%20sources%2C%20updates%20and%20extra%20tools.md)

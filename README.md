@@ -29,7 +29,7 @@
 
 ## Introduction
 
-Would you like to deploy a Virtual Data Center (VDC) in a remote facility and work with Docker Swarm and Kubernetes (K8s)? Perhaps you need to establish development, staging, and production environments. Do you have the ability to source Metal as a Service (MaaS) or Infrastructure as a Service (IaaS) from an affordable provider? If so, this guide series is for you! It explains how to configure a VDC server capable of running enterprise workloads using Proxmox VE.
+Would you like to deploy a Virtual Data Center (VDC) in a remote facility and work with Docker Swarm and Kubernetes (K8s)? Perhaps you need to establish development, staging, and production environments. Do you have the ability to source Metal as a Service (MaaS) or Infrastructure as a Service (IaaS) from an affordable provider? If so, this guide series is for you! It explains how to configure a VDC server capable of running enterprise workloads using Proxmox VE (PVE).
 
 The title says "Data Center," indicating that these guides are written with the idea of clustering several computers sourced from a US-based data center located in Kansas City, MO. The hardware considered is enterprise-grade, older model systems, but they are very capable for the proposed deployment. This capability is demonstrated in the very first [**G001** guide](G001%20-%20Hardware%20Setup.md), which details the hardware setup.
 
@@ -80,6 +80,7 @@ The core platforms used in this guide series to build the cluster are:
 - Hosting environment using [Virtualmin](https://www.virtualmin.com/) which will also provide other services to the network including DNS, eMail and will be deployed in virtual machines run by the Proxmox VE cluster.
 - Virtual platform backups using [Proxmox Backup Server](https://www.proxmox.com/en/proxmox-backup-server/overview) installed on a dedicated node within the network.
 - Mail gateway using [Proxmox Mail Gateway](https://www.proxmox.com/en/proxmox-mail-gateway/overview) installed as a virtual machine run by the Proxmox VE cluster.
+- [Wireguard](https://www.wireguard.com/) technology will be used to create a management LAN between the PVE hosts to enable clustering and network management of critical PVE network functions. Multiple Wiregaurd networks will be deployed.
 
 Other platfroms and concepts will be demonstrated including:
 - Setting up multiple Development Workstations i.e. [MacOS](https://www.apple.com/macos/sonoma/), [Windows](https://www.microsoft.com/en-us/windows/windows-11?r=1), [Ubuntu](https://ubuntu.com/desktop) desktops for remote development support.

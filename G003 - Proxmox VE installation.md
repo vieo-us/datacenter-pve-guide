@@ -6,21 +6,18 @@ There are a few different ways to install a Proxmox VE platform, and this guide 
 
 Typically, data centers that provide remote KVM access will bootstrap the server with an ISO image over a Preboot Execution Environment (PXE), allowing you to complete the installation via remote KVM. Others may offer a VNC or Spice console for installation completion. In our case, no such options are offered; the installation is delivered fully configured, allowing immediate access to the web GUI via the public IP address on port 8006.
 
+This is not a setback, as the system can be further customized to meet specific use cases. If we need to rescue the system, we can trigger a RescueCD to boot into the server RAM, allowing us to work on a troubled installation without overwriting the hard drives. Additionally, we can trigger a reinstallation of Proxmox VE if it becomes necessary to start over.
 
+But what if we want more control over the initial installation? Without remote KVM or any provider-offered VNC/Spice consoles, we must find alternative installation methods. In the next few guides, we will cover the most common methods of installing Proxmox VE outside of using the standard ISO method. These methods will mitigate the lack of remote KVM, VNC, or Spice access by default. However, a guide on the standard ISO installation method will also be provided.
 
-## References
+We have identified and will cover the following installation methods:
 
-### _Proxmox_
+- Standard ISO installation
+- Installation via SSH, VNC and RescueCD system using Qemu
+- Installation via SSH over an installed Debian distribution
 
-- [Proxmox](https://www.proxmox.com/en/)
-- [Proxmox VE installation guide](https://pve.proxmox.com/wiki/Installation)
-- [Proxmox VE admin guide. Installing Proxmox VE](https://pve.proxmox.com/pve-docs/chapter-pve-installation.html)
-- [Proxmox VE. System Requirements](https://www.proxmox.com/en/proxmox-ve/requirements)
-
-### _Rufus_
-
-- [Rufus](https://rufus.ie/)
+The latter two methods will allow remote installation when a pre-configured delivery is not optimal.
 
 ## Navigation
 
-[<< Previous (**G001. Hardware setup**)](G002%20-%20Hardware%20setup.md) | [+Table Of Contents+](G000%20-%20Table%20Of%20Contents.md) | [Next (**G003. Host configuration 01**) >>](G003%20-%20Host%20configuration%2001%20~%20Apt%20sources%2C%20updates%20and%20extra%20tools.md)
+[<< Previous (**G001. Hardware Setup**)](G001%20-%20Hardware%20Setup.md) | [+Table of Contents+](G000%20-%20Table%20of%20Contents.md) | [Next (**G003. Host configuration 01**) >>](G003%20-%20Host%20configuration%2001%20~%20Apt%20sources%2C%20updates%20and%20extra%20tools.md)

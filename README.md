@@ -4,7 +4,8 @@
 <br>
 <p align="center">
     <a href="LICENSE.md" target="_blank">
-        <img src="https://img.shields.io/github/license/vieo-us/datacenter-pve-guide" alt="GitHub license">
+        <img src="https://img.shields.io/badge/license-CC--BY--NC--SA--4.0-red
+        " alt="GitHub license">
     </a>
     <a href="https://github.com/vieo-us/datacenter-pve-guide/releases" target="_blank">
         <img src="https://img.shields.io/github/tag/vieo-us/datacenter-pve-guide" alt="GitHub tag (latest SemVer)">

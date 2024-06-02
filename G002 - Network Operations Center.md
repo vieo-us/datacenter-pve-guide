@@ -34,6 +34,10 @@ We chose NOCIX for its central location within the United States. Being in the m
 
 This hardware setup provides a comprehensive and scalable cluster environment for deploying a Virtual Data Center using Proxmox VE. The NOCIX data center enhances this setup with affordability with high reliability, robust security measures, redundant power infrastructure, reliable network capabilities, and extensive peering arrangements ensures a stable and secure environment for hosting enterprise-grade workloads.
 
+## Important Notes
+
+We must understand the unique challenges faced by using this provider for our setup. We opted for pre-configured unmanaged servers for this deployment. This means the specifications of the infrastructure are exactly what you see at deployment time—nothing more, nothing less. Additionally, nothing can be changed or added to the servers. For example, we discovered that some servers have multiple NICs while others do not, but this was not indicated at the time of purchase. Moreover, servers may be located in different racks within the data center, making it impossible to use secondary NICs to create private LANs between them. It also appears that the data center does not offer switching services to facilitate this. The IaaS is purely bare metal, and anything more complex requires you to co-locate your own equipment. For our reference, we will continue as this is an extreme set of circumstances and will test the boundaries of our deployment in non-optimal environments.
+
 ## References
 
 ### _Hardware_

@@ -72,11 +72,13 @@ The main goal of the build explained in this guide series is to combine affordab
 
 The core platforms used in this guide series to build the cluster are:
 
-- Virtualization platform: [Proxmox Virtual Environment](https://www.proxmox.com/en/) in a clustered mode.
-- Database clusters using [MySQL]() and [PostgreSQL]() with virtual machines run by the Proxmox VE cluster.
+- Virtualization platform: [Proxmox Virtual Environment](https://www.proxmox.com/en/proxmox-virtual-environment/overview) in a clustered mode.
+- Database clusters using [RonDB](https://www.rondb.com/) - [MySQL](https://www.mysql.com/) and [PostgreSQL](https://www.postgresql.org/) with virtual machines run by the Proxmox VE cluster.
 - [Docker](https://www.docker.com/) engine deployed in swarm mode with virtual machines run by the Proxmox VE cluster.
 - [Rancher K3s](https://k3s.io/) [Kubernetes](https://kubernetes.io/) distribution for building the Kubernetes cluster with virtual machines run by the Proxmox VE cluster.
 - Hosting environment using [Virtualmin](https://www.virtualmin.com/) which will also provide other services to the network including DNS, eMail and will be deployed in virtual machines run by the Proxmox VE cluster.
+- Virtual platform backups using [Proxmox Backup Server](https://www.proxmox.com/en/proxmox-backup-server/overview) installed on a dedicated node within the network.
+- Mail gateway using [Proxmox Mail Gateway](https://www.proxmox.com/en/proxmox-mail-gateway/overview) installed as a virtual machine run by the Proxmox VE cluster.
 
 After setting up the Kubernetes cluster, the idea is to deploy in it the following.
 

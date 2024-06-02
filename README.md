@@ -3,7 +3,7 @@
 </div>
 <br>
 <p align="center">
-    <a href="LICENSE" target="_blank">
+    <a href="LICENSE.md" target="_blank">
         <img src="https://img.shields.io/github/license/vieo-us/datacenter-pve-guide" alt="GitHub license">
     </a>
     <a href="https://github.com/vieo-us/datacenter-pve-guide/releases" target="_blank">

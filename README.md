@@ -27,6 +27,8 @@
   ## Reference Implementation
 </div>
 
+## Introduction
+
 Would you like to deploy a Virtual Data Center (VDC) in a remote facility and work with Docker Swarm and Kubernetes (K8s)? Perhaps you need to establish development, staging, and production environments. Do you have the ability to source Metal as a Service (MaaS) or Infrastructure as a Service (IaaS) from an affordable provider? If so, this guide series is for you! It explains how to configure a VDC server capable of running enterprise workloads using Proxmox VE.
 
 The title says "Data Center," indicating that these guides are written with the idea of clustering several computers sourced from a US-based data center located in Kansas City, MO. The hardware considered is enterprise-grade, older model systems, but they are very capable for the proposed deployment. This capability is demonstrated in the very first [**G001** guide](G001%20-%20Hardware%20Setup.md), which details the hardware setup.
@@ -45,7 +47,7 @@ Beyond these considerations, the information on how to perform this deployment i
 
 In this guide series, **in one place**, a collection of procedures is offered to run a Proxmox VE cluster with virtual machines and containers to build a powerful enterprise-grade remote data center.
 
-## Description of contents
+## Description of Contents
 
 The procedures explained in this guide series mainly deal with four concepts:
 
@@ -60,7 +62,7 @@ Each guide in the series is detailed and explanatory, only omitting information 
 
 Since the whole series is about building a specific setup, the guides are interrelated, more like chapters than independent guides. However, each guide usually focuses on one main concept or procedure, using the setup as an example of how to implement it.
 
-## Intended audience
+## Intended Audience
 
 In general, anyone with some background in Linux and virtual machines who is interested in virtualization, Docker, and Kubernetes. More broadly, anyone with the need or curiosity to run a Virtual Data Center on multiple capable enterprise-grade computers.
 
@@ -81,10 +83,10 @@ After setting up the Kubernetes cluster, the idea is to deploy in it the followi
 
 The whole system will also have backup procedures applied to it.
 
-## Table of contents
+## Table of Contents
 
 All the guides and their main sections are easily accessible through the [Table Of Contents](G000%20-%20Table%20of%20Contents.md) of this guide series.
 
 ## Navigation
 
-[+Table Of Contents+](G000%20-%20Table%20of%20Contents.md) | [Next (**G001. Hardware setup**) >>](G001%20-%20Hardware%20Setup.md)
+[+Table Of Contents+](G000%20-%20Table%20of%20Contents.md) | [Next (**G001. Hardware Setup**) >>](G001%20-%20Hardware%20Setup.md)

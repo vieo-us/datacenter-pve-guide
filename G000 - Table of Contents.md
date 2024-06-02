@@ -2,8 +2,9 @@
 
 ## [**README**](README.md#small-homelab-k8s-cluster-on-proxmox-ve)
 
-- [_Description of contents_](README.md#description-of-contents)
-- [_Intended audience_](README.md#intended-audience)
+- [_Introduction_](README.md#introduction)
+- [_Description of Contents_](README.md#description-of-contents)
+- [_Intended Audience_](README.md#intended-audience)
 - [_Goals_](README.md#goals)
 
 ## [**LICENSE**](LICENSE.md)

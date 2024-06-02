@@ -23,10 +23,10 @@
 
 ### [**G002** - Network Operations Center](./G002%20-%20Network%20Operations%20Center.md#g002-network-operations-center-(noc))
 
-- [_Key Features_](G002%20-%20Network%20Operations%20Center.md#key-features)
-- [_Summary_](G002%20-%20Network%20Operations%20Center.md#summary)
-- [_Important Notes_](G002%20-%20Network%20Operations%20Center.md#important-notes)
-- [_References_](G002%20-%20Network%20Operations%20Center.md#references)
+- [_Key Features_](./G002%20-%20Network%20Operations%20Center.md#key-features)
+- [_Summary_](./G002%20-%20Network%20Operations%20Center.md#summary)
+- [_Important Notes_](./G002%20-%20Network%20Operations%20Center.md#important-notes)
+- [_References_](./G002%20-%20Network%20Operations%20Center.md#references)
 
 
 ## Navigation

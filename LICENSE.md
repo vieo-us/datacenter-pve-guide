@@ -159,3 +159,7 @@ d. Nothing in this Public License constitutes or may be interpreted as a limitat
 
 - [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International - Common deeds](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International - Legal code](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
+
+## Navigation
+
+[<< Previous (**README**)](README.md) | [+Table of Contents+](G000%20-%20Table%20of%20Contents.md)

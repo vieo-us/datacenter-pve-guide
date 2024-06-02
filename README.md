@@ -49,11 +49,12 @@ In this guide series, **in one place**, a collection of procedures is offered to
 
 ## Description of Contents
 
-The procedures explained in this guide series mainly deal with four concepts:
+The procedures explained in this guide series mainly deal with five concepts:
 
 - How to install and configure a virtualization platform.
 - How to setup a Docker Swarm and Kubernetes cluster with VMs.
 - How to deploy applications on the Docker Swarm and Kubernetes cluster.
+- How to deploy multiple development Workstations for remote development.
 - How to deploy other network resources using VM's and Containers.
 
 Within these main concepts, topics like hardening, firewalling, optimizations, backups, and other relevant aspects encountered during the cluster setup are also covered.
@@ -80,11 +81,17 @@ The core platforms used in this guide series to build the cluster are:
 - Virtual platform backups using [Proxmox Backup Server](https://www.proxmox.com/en/proxmox-backup-server/overview) installed on a dedicated node within the network.
 - Mail gateway using [Proxmox Mail Gateway](https://www.proxmox.com/en/proxmox-mail-gateway/overview) installed as a virtual machine run by the Proxmox VE cluster.
 
+Other platfroms and concepts will be demonstrated including:
+- Setting up multiple Development Workstations i.e. [MacOS](https://www.apple.com/macos/sonoma/), [Windows](https://www.microsoft.com/en-us/windows/windows-11?r=1), [Ubuntu](https://ubuntu.com/desktop) desktops for remote development support.
+- Monitoring tools i.e. [Prometheus](https://prometheus.io/), [Grafana](https://grafana.com/grafana/), and [Zabbix](https://www.zabbix.com/) for monitoring network and cluster services.
+
+After setting up the Docker Swarm cluster, the idea is to deploy in it the following.
+
+- TBD - To be determined
+
 After setting up the Kubernetes cluster, the idea is to deploy in it the following.
 
-- File cloud: [Nextcloud](https://nextcloud.com/).
-- Lightweight git server: [Gitea](https://gitea.io/).
-- Kubernetes cluster monitoring stack: set of monitoring modules including [Prometheus](https://prometheus.io/), [Grafana](https://grafana.com/grafana/) and a couple of other related services.
+- TBD - To be determined
 
 The whole system will also have backup procedures applied to it.
 

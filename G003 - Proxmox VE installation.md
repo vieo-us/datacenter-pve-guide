@@ -1,6 +1,6 @@
 # G003 - Proxmox VE installation
 
-This guide explains how to install a Proxmox VE 8.2 platform on the hardware detailed in the [**G001** guide](G001%20-%20Hardware%20setup.md). This procedure follows a straightforward path, configuring only basic parameters. Any advanced configurations will be covered in later guides.
+This guide explains how to install a Proxmox VE **8.2.2** platform on the hardware detailed in the [**G001** guide](G001%20-%20Hardware%20setup.md). This procedure follows a straightforward path, configuring only basic parameters. Any advanced configurations will be covered in later guides.
 
 There are a few different ways to install a Proxmox VE platform, and this guide will cover all of them. In some circumstances, you may source Infrastructure as a Service (IaaS) or Metal as a Service (MaaS) from a provider that comes pre-installed with the distribution of your choice. Several providers offer virtualization platforms alongside other distributions such as XCP-NG, ESXi, and Proxmox VE. In these cases, the installation may be pre-configured to varying degrees, depending on the level of access provided by the data center.
 

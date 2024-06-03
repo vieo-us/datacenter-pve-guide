@@ -1,6 +1,6 @@
 # G004 - Installation - Standard ISO Setup
 
-This guide explains how to install a Proxmox VE **7.0** platform into the hardware detailed in the [**G001** guide](G001%20-%20Hardware%20setup.md). This procedure follows a straightforward path, meaning that only some basic parameters will be configured here. Any advanced stuff will be left for later guides.
+This guide explains how to install a Proxmox VE **8.2.2** platform into the hardware detailed in the [**G001** guide](G001%20-%20Hardware%20setup.md). This procedure follows a straightforward path, meaning that only some basic parameters will be configured here. Any advanced stuff will be left for later guides.
 
 ## System Requirements
 

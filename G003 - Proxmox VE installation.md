@@ -12,12 +12,12 @@ But what if we want more control over the initial installation? Without remote K
 
 We have identified and will cover the following installation methods:
 
-- Standard ISO installation
-- Installation via SSH, VNC and RescueCD system using Qemu
-- Installation via SSH over an installed Debian distribution
+- [Standard ISO installation](G004%20-%20Installation%20~%20Standard%20ISO%20Setup.md)
+- [Installation via SSH over an installed Debian distribution](G005%20-%20Installation%20~%20Alternative%20Debian%20Setup.md)
+- [Installation via SSH, VNC and RescueCD system using Qemu](G006%20-%20Installation%20~%20Alternative%20Qemu%20Setup.md)
 
 The latter two methods will allow remote installation when a pre-configured delivery is not optimal.
 
 ## Navigation
 
-[<< Previous (**G002. Network Operations Center**)](G002%20-%20Network%20Operations%20Center.md) | [+Table of Contents+](G000%20-%20Table%20of%20Contents.md) | [Next (**G003. Host configuration 01**) >>](G003%20-%20Host%20configuration%2001%20~%20Apt%20sources%2C%20updates%20and%20extra%20tools.md)
+[<< Previous (**G002. Network Operations Center**)](G002%20-%20Network%20Operations%20Center.md) | [+Table of Contents+](G000%20-%20Table%20of%20Contents.md) | [Next (**G004. Installation ~ Standard ISO Setup**) >>](G004%20-%20Installation%20~%20Standard%20ISO%20Setup.md)

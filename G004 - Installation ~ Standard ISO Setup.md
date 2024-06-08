@@ -62,28 +62,28 @@ I'll do it from a Windows 10 system, using [**Rufus**](https://rufus.ie/) to wri
 
 5. In Rufus, choose the Proxmox VE ISO you just downloaded and adjust the `Partition scheme` depending if your target computer is a UEFI system (switch to `GPT`) or not (leave `MBR`). Leave the rest of the parameters with their default values.
 
-    ![Rufus main window](images/g002/rufus_main_window.png "Rufus main window")
+    ![Rufus main window](images/g004/rufus_main_window.png "Rufus main window")
 
     > **BEWARE!**  
     > If you don't configure the `Partition scheme` properly, the Proxmox VE installer won't boot up when you try to launch it in your computer.
 
 6. With the configuration set, press the `START` button. Rufus will ask you what mode to use for writing the Proxmox VE installer ISO. Choose `Write in DD Image mode` and press `OK`.
 
-    ![Rufus ISO write mode](images/g002/rufus_write_mode.png "Rufus ISO write mode")
+    ![Rufus ISO write mode](images/g004/rufus_write_mode.png "Rufus ISO write mode")
 
 7. Rufus will warn you that the procedure will destroy **all data** on your USB device.
 
-    ![Rufus data destruction warning](images/g002/rufus_data_warning.png "Rufus data destruction warning")
+    ![Rufus data destruction warning](images/g004/rufus_data_warning.png "Rufus data destruction warning")
 
     If you're sure that you want to proceed, press `OK`.
 
 8. Rufus will then write the Proxmox VE ISO in your USB drive.
 
-    ![Rufus writing ISO on USB](images/g002/rufus_writing_iso.png "Rufus writing ISO on USB")
+    ![Rufus writing ISO on USB](images/g004/rufus_writing_iso.png "Rufus writing ISO on USB")
 
 9. Rufus will take a couple of minutes to do its job. When it finishes, you'll see the message `READY` written in the green progress bar.
 
-    ![Rufus finished writing ISO](images/g002/rufus_writing_iso_finished.png "Rufus finished writing ISO")
+    ![Rufus finished writing ISO](images/g004/rufus_writing_iso_finished.png "Rufus finished writing ISO")
 
 With the ISO properly written in the USB drive, you can take it  finally start the installation.
 
@@ -102,7 +102,7 @@ The Proxmox site has two guides explaining the Proxmox VE installer, which I've 
 
 2. After successfully booting the computer up from the USB drive, you'll eventually be greeted by the following screen.
 
-    ![Installer's welcome screen](images/g002/Installer-01_initial_screen.png "Installer's welcome screen")
+    ![Installer's welcome screen](images/g004/Installer-01_initial_screen.png "Installer's welcome screen")
 
     From the four options available, the only ones you'll ever use are the first (**Install Proxmox VE**) and the third (**Rescue Boot**). The first one is rather self-explanatory, and the third will help you start your installed Proxmox VE in case you happen to have problems booting it up.
 
@@ -110,7 +110,7 @@ The Proxmox site has two guides explaining the Proxmox VE installer, which I've 
 
 4. **This is not a step**, just a warning the installer could raise you if your CPU doesn't have the support for virtualization Proxmox VE needs to have for executing its virtualization stuff with the KVM virtualization engine.
 
-    ![Virtualization support warning](images/g002/Installer-02_virtualization_support_warning.png "Virtualization support warning")
+    ![Virtualization support warning](images/g004/Installer-02_virtualization_support_warning.png "Virtualization support warning")
 
     If you see this warning, **abort** the installation and boot in your server's BIOS to check if your CPU's virtualization technology support is disabled. If so, enable it and reboot back to the installer again.
 
@@ -119,23 +119,23 @@ The Proxmox site has two guides explaining the Proxmox VE installer, which I've 
 
 5. Usually, the first thing you should see of the installer is the **EULA** screen.
 
-    ![EULA screen](images/g002/Installer-03_EULA_screen.png "EULA screen")
+    ![EULA screen](images/g004/Installer-03_EULA_screen.png "EULA screen")
 
     Nothing to do here, except clicking on **I agree** and move on.
 
 6. Here you'll meet the very first thing you'll have to configure, **where you want to install Proxmox VE**.
 
-    ![Target Harddisk](images/g002/Installer-04_target_harddisk.png "Target Harddisk")
+    ![Target Harddisk](images/g004/Installer-04_target_harddisk.png "Target Harddisk")
 
     The screenshot above is from a VirtualBox machine, in which I had set up three virtual storage drives as stand-ins for the drives in the real computer.
 
-    ![Target Harddisk list](images/g002/Installer-04_target_harddisk_list.png "Target Harddisk list")
+    ![Target Harddisk list](images/g004/Installer-04_target_harddisk_list.png "Target Harddisk list")
 
     In the Target Harddisk list you have to choose on which storage drive you want to install Proxmox VE, and you want it in the SSD drive. So, assuming the SSD is the first device in the list, choose `/dev/sda` but **don't click** on the **Next** button yet!
 
 7. With the `/dev/sda` device chosen as target harddisk, push the **Options** button, there's something else to configure there.
 
-    ![Target Harddisk options](images/g002/Installer-05_target_harddisk_options.png "Target Harddisk options")
+    ![Target Harddisk options](images/g004/Installer-05_target_harddisk_options.png "Target Harddisk options")
 
     There you'll see that you can change the filesystem, and also edit a few parameters.
 
@@ -149,27 +149,27 @@ The Proxmox site has two guides explaining the Proxmox VE installer, which I've 
 
     - `maxroot`, `minfree` and `maxvz` are left empty, to let the installer handle them with whatever defaults it uses.
 
-    ![Target Harddisk options adjusted](images/g002/Installer-05_target_harddisk_options_adjusted.png "Target Harddisk options adjusted")
+    ![Target Harddisk options adjusted](images/g004/Installer-05_target_harddisk_options_adjusted.png "Target Harddisk options adjusted")
 
     When you have everything ready in this screen, click on **Next**.
 
 8. The next screen is the **Localization and Time Zone selection** for your system.
 
-    ![Localization and time zone ](images/g002/Installer-06_localization_time_zone.png "Localization and time zone")
+    ![Localization and time zone ](images/g004/Installer-06_localization_time_zone.png "Localization and time zone")
 
     Just choose whatever suits your needs and move on.
 
 9. Now, you'll have to input a proper password and a valid email for the `root` user.
 
-    ![Root password and email address](images/g002/Installer-07_root_password.png "Root password and email address")
+    ![Root password and email address](images/g004/Installer-07_root_password.png "Root password and email address")
 
     This screen will make some validation both over the password and the email fields when you click on **Next**.
 
-    ![Email invalid warning](images/g002/Installer-08_root_mail_valid.png "Email invalid warning")
+    ![Email invalid warning](images/g004/Installer-08_root_mail_valid.png "Email invalid warning")
 
 10. This step is about setting up your network configuration.
 
-    ![Management network configuration](images/g002/Installer-09_network_configuration.png "Management network configuration")
+    ![Management network configuration](images/g004/Installer-09_network_configuration.png "Management network configuration")
 
     What you're configuring here is through which network controller and network you want to reach the Proxmox VE management console. The installer will autodetect the values, but some adjustment may be required.
 
@@ -177,17 +177,17 @@ The Proxmox site has two guides explaining the Proxmox VE installer, which I've 
 
 11. The **summary** screen will show you the configuration you've chosen.
 
-    ![Summary screen](images/g002/Installer-10_summary.png "Summary screen")
+    ![Summary screen](images/g004/Installer-10_summary.png "Summary screen")
 
     Notice, at the bottom of the screen, the check about **Automatically reboot after successful installation**. If you prefer to reboot manually, uncheck it. Then, if you're happy with the setup, click on **Install**.
 
 12. The next screen will show you a progress bar and some information while doing the installation.
 
-    ![Progress screen partitioning](images/g002/Installer-11_progress_screen.png "Progress screen partitioning")
+    ![Progress screen partitioning](images/g004/Installer-11_progress_screen.png "Progress screen partitioning")
 
     With an SSD as the target hard disk, the installation process will go really fast.
 
-    ![Progress screen installing](images/g002/Installer-12_progress_screen_installing.png "Progress screen installing")
+    ![Progress screen installing](images/g004/Installer-12_progress_screen_installing.png "Progress screen installing")
 
     > **BEWARE!**  
     > The installer, on its own, will download and install a more recent version of the Proxmox VE platform, instead of just putting the one present in the USB.
@@ -198,7 +198,7 @@ The Proxmox site has two guides explaining the Proxmox VE installer, which I've 
 
 You have installed Proxmox VE and your server has rebooted. Proxmox VE comes with a web console which is accessible through the **port 8006**. So, open a browser and navigate to `https://your.host.ip.address:8006` and you'll reach the Proxmox VE web console.
 
-![Proxmox VE web console login](images/g002/proxmox_ve_web_console_login.png "Proxmox VE web console login")
+![Proxmox VE web console login](images/g004/proxmox_ve_web_console_login.png "Proxmox VE web console login")
 
 Log in as `root` and take a look around, confirming that the installation it's done. At the time of writing this, the installation procedure left my host with a Proxmox VE **7.0-11** (the version in the ISO was _7.0-2_) **standalone node** running on a **Debian 11 "Bullseye"**.
 
